@@ -1,0 +1,38 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header .navbar-brand {
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+header .nav-link {
+    color: grey;
+    text-decoration: none;
+    margin: 0 16px; 
+    font-size: 17.6px; 
+}
+
+header .nav-link:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+    margin-top: auto;
+}
