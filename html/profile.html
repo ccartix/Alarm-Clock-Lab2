@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Alarm Clock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="bg-light p-3 shadow">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">ALARM CLOCK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="alarm.html">Alarms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-white p-4 rounded shadow">
+                <h2 class="text-center fw-bold mb-4">Your Profile</h2>
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th>Username</th>
+                        <td id="profile-username"></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td id="profile-email"></td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td id="profile-dob"></td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td id="profile-gender"></td>
+                    </tr>
+                </table>
+                <div class="text-center mt-4">
+                    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Alarm Clock © 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/controller.js"></script>
+</body>
+</html>

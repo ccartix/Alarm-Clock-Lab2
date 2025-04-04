@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Alarms - Alarm Clock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="bg-light p-3 shadow">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">ALARM CLOCK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-white p-4 rounded shadow">
+                <h2 class="text-center fw-bold mb-4">Add Alarm</h2>
+                <form id="alarm-form">
+                    <div class="mb-3">
+                        <label for="alarmTime" class="form-label">Set Alarm Time</label>
+                        <input type="time" class="form-control" id="alarmTime" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="alarmDate" class="form-label">Set Alarm Date</label>
+                        <input type="date" class="form-control" id="alarmDate" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Add Alarm</button>
+                </form>
+
+                <h3 class="text-center fw-bold mt-4">Active Alarms</h3>
+                <ul class="list-group"></ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Alarm Clock &copy; 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/controller.js"></script>
+</body>
+</html>
